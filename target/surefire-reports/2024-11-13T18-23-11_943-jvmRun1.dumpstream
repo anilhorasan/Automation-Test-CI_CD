@@ -1,0 +1,24 @@
+# Created at 2024-11-13T18:23:31.120
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'uration.java:2869)'.
+
+# Created at 2024-11-13T18:23:31.131
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2883)'.
+
+# Created at 2024-11-13T18:23:31.228
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '	at freemarker.core.Include.accept(Include.java:162)'.
+
+# Created at 2024-11-13T18:23:31.230
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '	... 35 more'.
+
+# Created at 2024-11-13T18:23:31.231
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream ':guration.java:2869)'.
+
+# Created at 2024-11-13T18:23:31.232
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2883)'.
+
+# Created at 2024-11-13T18:23:33.529
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '	at freemarker.core.Include.accept(Include.java:162)'.
+
+# Created at 2024-11-13T18:23:33.529
+Corrupted channel by directly writing to native stream in forked JVM 1. Stream '	... 35 more'.
+
