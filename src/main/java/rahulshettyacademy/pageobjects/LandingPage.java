@@ -11,6 +11,7 @@ public class LandingPage extends AbstractComponent {
 
 	WebDriver driver;
 	// TEST TEST TEST
+	// test 2
 	public LandingPage(WebDriver driver) {
 		super(driver);
 		// initialization
