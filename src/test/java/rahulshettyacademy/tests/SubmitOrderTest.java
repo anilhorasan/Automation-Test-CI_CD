@@ -37,27 +37,31 @@ public class SubmitOrderTest extends BaseTest {
 
 	@Test(dataProvider = "getData", groups = { "Purchase" })
 	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
+		System.out.println("1");
 
 		// from Landing Page to Product Catalogue Page
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		// List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(input.get("product"));
+		System.out.println("2");
 
 		// from Product Catalogue Page to Cart Page
 		CartPage cartPage = productCatalogue.goToCartPage();
 		Boolean match = cartPage.VerifyProductDisplay(input.get("product"));
 		Assert.assertTrue(match);
+		System.out.println("3");
 
 		// from Cart Page to Checkout Page
 		CheckoutPage checkoutPage = cartPage.goToCheckout();
 		checkoutPage.selectCountry("india");
+		System.out.println("4");
 
 		// from Checkout Page to Confirmation Page
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 		String confirmMessage = confirmationPage.getConfirmationMessage();
 		Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 		
-		System.out.println("submitOrder");
+		System.out.println("5");
 
 	}
 

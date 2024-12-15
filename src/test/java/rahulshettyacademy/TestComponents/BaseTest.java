@@ -120,7 +120,6 @@ public class BaseTest {
 
 	public void tearDown() {
 		System.out.println("tearDown");
-		driver.close();
 		driver.quit();
 	}
 }
